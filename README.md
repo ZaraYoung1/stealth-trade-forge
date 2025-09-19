@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+# Stealth Trade Forge
 
-## Project info
+A revolutionary encrypted derivatives exchange built with Fully Homomorphic Encryption (FHE) technology. Trade options and futures with complete privacy - order books remain encrypted until execution.
 
-**URL**: https://lovable.dev/projects/92c9e20c-eb53-40ec-bfe4-bf43d23b5f4d
+## Features
 
-## How can I edit this code?
+- **Fully Homomorphic Encryption**: All trading data remains encrypted during computation
+- **Private Order Books**: Orders are encrypted until matching occurs
+- **Real-time Trading**: Execute trades with complete privacy
+- **Multi-wallet Support**: Connect with Rainbow, MetaMask, and other popular wallets
+- **Secure Derivatives**: Trade options and futures with encrypted positions
 
-There are several ways of editing your application.
+## Technology Stack
 
-**Use Lovable**
+- **Frontend**: React, TypeScript, Vite
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **Wallet Integration**: RainbowKit, Wagmi, Viem
+- **Blockchain**: Ethereum Sepolia Testnet
+- **Encryption**: Zama FHE (Fully Homomorphic Encryption)
+- **Smart Contracts**: Solidity with FHE support
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/92c9e20c-eb53-40ec-bfe4-bf43d23b5f4d) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ 
+- npm or yarn
+- Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/ZaraYoung1/stealth-trade-forge.git
+cd stealth-trade-forge
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Set up environment variables:
+```bash
+cp env.example .env
+# Edit .env with your configuration
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file with the following variables:
 
-**Use GitHub Codespaces**
+```env
+# Chain Configuration
+VITE_CHAIN_ID=11155111
+VITE_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Wallet Connect Configuration
+VITE_WALLET_CONNECT_PROJECT_ID=your_project_id
+```
 
-## What technologies are used for this project?
+## Smart Contract
 
-This project is built with:
+The project includes a Solidity smart contract (`StealthTradeForge.sol`) that implements:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Encrypted order management
+- Private position tracking
+- Secure trade execution
+- FHE-based computations
 
-## How can I deploy this project?
+### Contract Features
 
-Simply open [Lovable](https://lovable.dev/projects/92c9e20c-eb53-40ec-bfe4-bf43d23b5f4d) and click on Share -> Publish.
+- **Order Management**: Create, match, and execute encrypted orders
+- **Position Tracking**: Open and close encrypted positions
+- **Trade Execution**: Secure trade matching with FHE
+- **Balance Management**: Encrypted trader balances
+- **Reputation System**: Encrypted trader reputation scores
 
-## Can I connect a custom domain to my Lovable project?
+## Development
 
-Yes, you can!
+### Available Scripts
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Project Structure
+
+```
+src/
+├── components/          # React components
+├── lib/                # Utility functions and configurations
+├── hooks/              # Custom React hooks
+├── pages/              # Page components
+└── main.tsx           # Application entry point
+
+contracts/
+└── StealthTradeForge.sol  # Smart contract
+```
+
+## Deployment
+
+### Vercel Deployment
+
+1. Connect your GitHub repository to Vercel
+2. Set environment variables in Vercel dashboard
+3. Deploy automatically on push to main branch
+
+### Manual Deployment
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. Deploy the `dist` folder to your hosting provider
+
+## Security
+
+This project implements state-of-the-art privacy features:
+
+- **FHE Encryption**: All sensitive data remains encrypted
+- **Zero-Knowledge Proofs**: Verify trades without revealing details
+- **Secure Matching**: Orders are matched without exposing information
+- **Private Balances**: Account balances are encrypted
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## License
+
+MIT License - see LICENSE file for details
+
+## Support
+
+For support and questions, please open an issue on GitHub or contact the development team.
