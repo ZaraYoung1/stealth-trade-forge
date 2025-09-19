@@ -1,9 +1,9 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9945ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:1" />
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
@@ -15,19 +15,24 @@
   </defs>
   
   <!-- Background Circle -->
-  <circle cx="16" cy="16" r="15" fill="url(#gradient)" opacity="0.2"/>
+  <circle cx="16" cy="16" r="15" fill="url(#gradient)" opacity="0.1"/>
   
-  <!-- Shield Shape -->
-  <path d="M16 2L8 6V16C8 22 16 30 16 30S24 22 24 16V6L16 2Z" fill="url(#gradient)" filter="url(#glow)"/>
+  <!-- Trading Chart Icon -->
+  <g filter="url(#glow)">
+    <!-- Chart Candlestick -->
+    <rect x="12" y="18" width="3" height="8" fill="url(#gradient)" opacity="0.8"/>
+    <rect x="16" y="14" width="3" height="12" fill="url(#gradient)" opacity="0.8"/>
+    <rect x="20" y="16" width="3" height="10" fill="url(#gradient)" opacity="0.8"/>
+    
+    <!-- Chart Lines -->
+    <path d="M10 22L14 18L18 20L22 16L26 18" stroke="url(#gradient)" stroke-width="2" fill="none"/>
+    
+    <!-- Encryption Lock Overlay -->
+    <rect x="14" y="8" width="4" height="3" rx="0.5" fill="url(#gradient)" opacity="0.9"/>
+    <path d="M15 8V6C15 5.4 15.4 5 16 5S17 5.4 17 6V8" stroke="url(#gradient)" stroke-width="1" fill="none"/>
+  </g>
   
-  <!-- Lock Icon -->
-  <rect x="12" y="18" width="8" height="6" rx="1" fill="white" opacity="0.9"/>
-  <path d="M14 18V16C14 14.9 14.9 14 16 14S18 14.9 18 16V18" stroke="white" stroke-width="1.5" fill="none"/>
-  
-  <!-- Encryption Lines -->
-  <path d="M6 12L10 8L14 12" stroke="white" stroke-width="1" fill="none" opacity="0.7"/>
-  <path d="M18 12L22 8L26 12" stroke="white" stroke-width="1" fill="none" opacity="0.7"/>
-  
-  <!-- Center Dot -->
-  <circle cx="16" cy="21" r="1" fill="white" opacity="0.8"/>
+  <!-- Data Flow Lines -->
+  <path d="M4 8L8 12L12 8" stroke="url(#gradient)" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M20 8L24 12L28 8" stroke="url(#gradient)" stroke-width="1" fill="none" opacity="0.6"/>
 </svg>

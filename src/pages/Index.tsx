@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { TradingChart } from '@/components/TradingChart';
 import { OrderBook } from '@/components/OrderBook';
 import { OptionsChain } from '@/components/OptionsChain';
-import { TradingPanel } from '@/components/TradingPanel';
+import { SecureTradingPanel } from '@/components/SecureTradingPanel';
 
 const Index = () => {
   return (
@@ -24,9 +24,9 @@ const Index = () => {
             <OptionsChain />
           </div>
 
-          {/* Right Column - Trading Panel */}
+          {/* Right Column - Secure Trading Panel */}
           <div className="lg:col-span-3">
-            <TradingPanel />
+            <SecureTradingPanel />
           </div>
         </div>
       </main>

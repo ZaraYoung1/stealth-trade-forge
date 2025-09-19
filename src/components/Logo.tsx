@@ -96,9 +96,9 @@ export const Logo = () => {
       />
       <div className="flex flex-col">
         <span className="text-xl font-bold bg-gradient-holo bg-clip-text text-transparent">
-          CryptoVault
+          Stealth Trade
         </span>
-        <span className="text-xs text-muted-foreground font-mono">FHE Exchange</span>
+        <span className="text-xs text-muted-foreground font-mono">Encrypted Exchange</span>
       </div>
     </div>
   );

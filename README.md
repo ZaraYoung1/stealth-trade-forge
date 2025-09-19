@@ -1,23 +1,23 @@
 # Stealth Trade Forge
 
-A revolutionary encrypted derivatives exchange built with Fully Homomorphic Encryption (FHE) technology. Trade options and futures with complete privacy - order books remain encrypted until execution.
+A next-generation encrypted derivatives platform powered by advanced cryptographic technologies. Experience truly private trading where your strategies remain confidential until execution.
 
-## Features
+## Core Capabilities
 
-- **Fully Homomorphic Encryption**: All trading data remains encrypted during computation
-- **Private Order Books**: Orders are encrypted until matching occurs
-- **Real-time Trading**: Execute trades with complete privacy
-- **Multi-wallet Support**: Connect with Rainbow, MetaMask, and other popular wallets
-- **Secure Derivatives**: Trade options and futures with encrypted positions
+- **Zero-Knowledge Trading**: Execute trades without revealing your positions
+- **Encrypted Order Matching**: Orders remain private until they meet
+- **Confidential Derivatives**: Trade complex instruments with complete privacy
+- **Multi-Chain Support**: Seamless integration with leading wallet providers
+- **Advanced Analytics**: Private market insights without data exposure
 
-## Technology Stack
+## Architecture
 
-- **Frontend**: React, TypeScript, Vite
-- **UI Components**: shadcn/ui, Tailwind CSS
-- **Wallet Integration**: RainbowKit, Wagmi, Viem
+- **Frontend**: Modern React with TypeScript
+- **Styling**: Tailwind CSS with custom components
+- **Wallet Integration**: Multi-provider support via RainbowKit
 - **Blockchain**: Ethereum Sepolia Testnet
-- **Encryption**: Zama FHE (Fully Homomorphic Encryption)
-- **Smart Contracts**: Solidity with FHE support
+- **Cryptography**: Advanced FHE implementation
+- **Smart Contracts**: Solidity with encrypted computation
 
 ## Getting Started
 

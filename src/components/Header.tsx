@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Logo } from './Logo';
-import { Wallet, Shield, Lock } from 'lucide-react';
+import { Wallet, TrendingUp, Lock } from 'lucide-react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount } from 'wagmi';
 
@@ -15,8 +15,8 @@ export const Header = () => {
           
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-2 text-sm">
-              <Shield className="w-4 h-4 text-profit" />
-              <span className="text-muted-foreground">Fully Homomorphic Encryption</span>
+              <TrendingUp className="w-4 h-4 text-profit" />
+              <span className="text-muted-foreground">Encrypted Trading</span>
             </div>
             
             <div className="flex items-center gap-2">
