@@ -47,16 +47,32 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        profit: {
+          DEFAULT: "hsl(var(--profit))",
+          glow: "hsl(var(--profit-glow))",
         },
+        loss: {
+          DEFAULT: "hsl(var(--loss))",
+          glow: "hsl(var(--loss-glow))",
+        },
+      },
+      backgroundImage: {
+        'gradient-holo': 'var(--gradient-holo)',
+        'gradient-profit': 'var(--gradient-profit)',
+        'gradient-loss': 'var(--gradient-loss)',
+        'gradient-encrypted': 'var(--gradient-encrypted)',
+        'gradient-chart': 'var(--gradient-chart)',
+      },
+      boxShadow: {
+        'glow-cyan': 'var(--shadow-glow-cyan)',
+        'glow-purple': 'var(--shadow-glow-purple)',
+        'glow-profit': 'var(--shadow-glow-profit)',
+        'glow-loss': 'var(--shadow-glow-loss)',
+        'card': 'var(--shadow-card)',
+      },
+      fontFamily: {
+        'mono': ['var(--font-mono)'],
+        'display': ['var(--font-display)'],
       },
       borderRadius: {
         lg: "var(--radius)",
